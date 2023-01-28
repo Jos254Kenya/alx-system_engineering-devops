@@ -7,6 +7,6 @@ do
     then
 echo "Hi"
     fi
-    echo "Holberton School"
+    echo "Best School"
     let cont=cont+1
 done
