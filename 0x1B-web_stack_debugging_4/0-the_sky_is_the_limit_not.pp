@@ -1,5 +1,7 @@
-#fix limit file
-exec { 'Correct file and restart':
-  command  => 'sudo sed -i \'s/15/30000/\' /etc/default/nginx && sudo service nginx restart',
-  provider => shell,
+# fixes increase limit
+exec { 'sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 5000\"/g" /etc/default/nginx':
+  path => '/usr/bin:/usr/sbin:/bin',
+}
+-> exec {'restart service':
+  command => '/usr/sbin/service nginx restart',
 }
