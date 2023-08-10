@@ -57,4 +57,4 @@ Now create a dashboard with different metrics displayed in order to get a few di
 ---
 
 ## Author
-* **Nga La** - [sungnga](https://github.com/sungnga)
+* **Nga La** - [josephsigawa](https://github.com/Jos254Kenya/)
